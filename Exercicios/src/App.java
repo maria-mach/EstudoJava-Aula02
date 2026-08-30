@@ -3,40 +3,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-class Produto {
-    private String nome;
-    private double preco;
-    private String categoria;
-
-    public Produto(String nome, double preco, String categoria) {
-        this.nome = nome;
-        this.preco = preco;
-        this.categoria = categoria;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public double getPreco() {
-        return preco;
-    }
-
-    public String getCategoria() {
-        return categoria;
-    }
-
-    @Override
-    public String toString() {
-        return "Produto{" +
-                "nome='" + nome + '\'' +
-                ", preco=" + preco +
-                ", categoria='" + categoria + '\'' +
-                '}';
-    }
-}
-
-public class exercicio01 {
+public class App {
     public static void main(String[] args) {
         List<Produto> produtos = Arrays.asList(
                 new Produto("Notebook", 3500.0, "Eletronicos"),
